@@ -1,9 +1,9 @@
 # Module: mmm-energy-saver
 
-The `mmm-energy-saver` module is a [MagicMirror](https://github.com/MichMich/MagicMirror) addon.
+The `mmm-energy-saver` module is a [MagicMirror](https://github.com/MichMich/MagicMirror) addon.<br/>
 This module requires MagicMirror version `2.5` or later.
 
-This module works in conjunction with [MMM-Pir-Sensor](https://github.com/paviro/MMM-PIR-Sensor) to automatically suspend & resume all your modules based on movement detection. Furthermore, this module allows you to specify times when all the modules are suspended and the screen is turned off as well.
+This module works in conjunction with [MMM-Pir-Sensor](https://github.com/paviro/MMM-PIR-Sensor) to automatically suspend & resume all your modules based on movement detection. Furthermore, this module allows you to specify times when all the modules are suspended and your HDMI-connected screen is turned off as well.
 
 **Please note that the movement detection will not work unless you have the MMM-Pir-Sensor module installed (and working).**
 
