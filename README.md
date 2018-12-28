@@ -15,6 +15,7 @@ By design, this module has fairly limited functionality - which is nice because 
 - [Installing the module](#installing-the-module)
 - [Using the module](#using-the-module)
 - [General Configuration Options](#general-configuration-options)
+- [Cron Expressions](#cron-expressions)
 - [Developer Notes](#developer-notes)
 
 
@@ -41,13 +42,18 @@ Seeing that nothing is displayed on screen, there's no need to add a `position` 
 
 ## General Configuration Options
 
-Option             | Type      | Default         | Description
--------------------|-----------|-----------------|-------------------------------------------------------
-`timeoutInSeconds` | `int`     | `300`           | When motion is triggered, how long to wait before going to sleep. Default is 5 minutes.
-`triggerMonitor`   | `boolean` | `true`          | Whether the monitor should be turned on and off.
-`monitorOn`        | `string`  | `00 30 7 * * *` | When to turn the monitor on. Default is 7:30 am. Should be a valid [cron expression](https://github.com/kelektiv/node-cron#available-cron-patterns).
-`monitorOff`       | `string`  | `00 30 23 * * *`| When to turn the monitor off. Default is 11:30 pm. Should be a valid [cron expression](https://github.com/kelektiv/node-cron#available-cron-patterns).
+Option             | Type      | Default          | Description
+-------------------|-----------|------------------|-------------------------------------------------------
+`timeoutInSeconds` | `int`     | `300`            | When motion is triggered, how long to wait before going to sleep. Default is 5 minutes.
+`triggerMonitor`   | `boolean` | `true`           | Whether the monitor should be turned on and off.
+`monitorOn`        | `string`  | `00 30 7 * * *`  | When to turn the monitor on. Default is 7:30 am.
+`monitorOff`       | `string`  | `00 30 23 * * *` | When to turn the monitor off. Default is 11:30 pm.
 
+
+## Cron Expressions
+
+Both the `monitorOn` and `monitorOff` settings take valid `cron` expressions as their arguments. If you're confused as to the syntax to use,
+check out the [Node-Cron documentation](https://github.com/kelektiv/node-cron#available-cron-patterns).
 
 
 ## Developer Notes
