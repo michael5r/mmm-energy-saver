@@ -44,7 +44,7 @@ Seeing that nothing is displayed on screen, there's no need to add a `position` 
 
 Option             | Type      | Default          | Description
 -------------------|-----------|------------------|-------------------------------------------------------
-`timeoutInSeconds` | `int`     | `300`            | When motion is triggered, how long to wait before going to sleep. Default is 5 minutes.
+`timeoutInSeconds` | `int`     | `300`            | When motion is triggered, how long to wait before going to sleep.<br>Default is 5 minutes.
 `triggerMonitor`   | `boolean` | `true`           | Whether the monitor should be turned on and off.
 `monitorOn`        | `string`  | `00 30 7 * * *`  | When to turn the monitor on. Default is 7:30 am.
 `monitorOff`       | `string`  | `00 30 23 * * *` | When to turn the monitor off. Default is 11:30 pm.
